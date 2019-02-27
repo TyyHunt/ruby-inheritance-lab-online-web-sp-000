@@ -5,7 +5,10 @@ class Student < User
   end
   
   def learn 
-    Teacher.teach 
+    @knowledge << Teacher.teach 
   end
 
+  def knowledge
+    return learn
+  end
 end
