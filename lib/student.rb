@@ -9,6 +9,6 @@ class Student < User
   end
 
   def knowledge
-    return learn
+    @knowledge
   end
 end
